@@ -1,0 +1,104 @@
+.main-content{
+    display: inline-grid;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    overflow: hidden;
+    position: sticky;
+    z-index: 2;
+}
+.main-content .mood{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 10%;
+    cursor: pointer;
+    left: calc(55% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 20s linear infinite;
+}
+@keyframes autoRun {
+    from{
+        transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+    }
+    to{
+        transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+    }
+}
+
+.main-content .mood .mood-1{
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(250px);
+}
+
+.main-content .mood .mood-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-content .model{
+    background: url('../Assets/meditation.png');
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-size: auto 130%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: -2;
+}
+
+.quote{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+   
+    
+}
+
+.head-quote-1{
+    /* position: absolute; */
+    font-size: 25vh;
+    font-weight: 900;
+    -webkit-text-stroke: 0.2rem rgb(37, 87, 67);
+    color: transparent;
+    margin-top: -5vh;
+    margin-bottom: -20vh;
+    z-index: -4;
+    background: -webkit-linear-gradient(#ebe9d6, #176b3df6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.2rem rgb(31, 99, 72);
+    text-shadow: 10px 10px  rgba(33, 34, 34, 0.228);
+    
+}
+.head-quote-2{
+    /* position: absolute; */
+    bottom: 0;
+    right: 0;
+    /* margin-top: -30vh; */
+    font-size: 30vh;
+    font-weight: 900;
+    background: -webkit-linear-gradient(#ebe9d6, #176b3df6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.2rem rgb(37, 87, 67);
+    text-shadow: 10px 10px  rgba(34, 34, 33, 0.228);
+    color: transparent;
+    z-index: -4;
+    
+}
+.head-quote-3{
+    -webkit-text-stroke: 0.05rem rgb(19, 20, 20);
+    background:  -webkit-linear-gradient(#eee, #462784);
+    -webkit-background-clip: text;;
+    color: transparent;
+}
+
+

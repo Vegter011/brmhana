@@ -1,0 +1,55 @@
+.modal-wrapper{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(189, 189, 189, 0.427);
+}
+
+.modal-container{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+}
+
+.pop{
+    margin: auto;
+    
+}
+
+.card-element{
+    height: 400px;
+    margin: 50px 20px 90px 20px;
+    padding: 10px ;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    border-radius: 100px;
+    
+}
+
+.container{
+    background: rgb(37, 87, 67);
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    outline: 0.1rem solid white;
+}
+
+.psychologist-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.pop .button{
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    background-color: black;
+    color: white;
+}

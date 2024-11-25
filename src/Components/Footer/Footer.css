@@ -1,0 +1,14 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-top: 2px solid white;
+    background: transparent;
+    width: 100%;
+}
+
+.footer p{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    align-self: center;
+}
